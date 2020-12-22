@@ -1,0 +1,36 @@
+SQL Or SQUEL 
+
+KEYWORDS: SELECT , INSERT , DELETE , FROM , WHERE , USE , AND ,OR ,NOT ,LIKE ,IN , NOT IN,BETWEEN,
+                         AS ,ORDER BY ,
+
+WHEN WE USE ALL THEN - " * " 
+SELECT * FROM Student WHERE s.id='1'
+SELECT * FROM Student WHERE  StudentName LIKE 'kumar' AND 'ready'
+SELECT * FROM Student  WHERE lastName REGEXP 'kumar|ready'
+SELECT * FROM Student WHERE  State IN (mum,hyd,nlr)
+SELECT * FROM Student WHERE  State NOT IN ('mum','hyd','nlr')
+SELECT * FROM Student WHERE Age BETWEEN '10' AND '30'
+SELECT * FROM Student WHERE Age>='20' AND Points>='80' //both should be true
+SELECT * FROM Student WHERE Age>='20' OR Points>='80' //ONE should be true
+SELECT * FROM Student  WHERE  NOT (Age>='20' AND Points>='80') //both should be true
+SELECT * FROM Student  WHERE lastName REGEXP 'kumar'// kumar should be their
+SELECT * FROM Student  WHERE lastName REGEXP '^kumar'// starting with kumar
+SELECT * FROM Student  WHERE lastName REGEXP 'kumar$'// ending with kumar
+SELECT * FROM Student  WHERE lastName REGEXP '[aei]b' // example: ab , eb, ib
+SELECT * FROM Student  WHERE lastName REGEXP 'b[aei]' // example: ba , be, bi
+SELECT  (Pointer*10)+100 AS Average FROM Student  
+"--" it is use for comments
+"b%" example:bhanu// after
+"%y" example :abhinay// before it can have any number of elements
+"%b%" example :abhinay//front and back
+"_k" example: ok //only one element before 'k'
+"DISTINCT" : AVOID duplicates in table//SELECT DISTINCT State FROM Student
+
+
+
+ 
+
+
+
+ 
+
